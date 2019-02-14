@@ -40,6 +40,14 @@ $(document).ready(function () {
             }, i*100);
         }
     });
+
+    document.body.addEventListener('touchstart', function(e){
+        for(var i = 0; i<randCt(0,10); i++){
+            setTimeout(function(){
+                heart.init(e);
+            }, i*100);
+        }
+    });
 });
 
 $("#top").lettering();
